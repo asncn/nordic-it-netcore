@@ -18,7 +18,6 @@ namespace _4th_Homework
 
     }
 
-
     class Program
 
     {
@@ -37,8 +36,6 @@ namespace _4th_Homework
                 .CurrentCulture
                 .NumberFormat
                 .NumberDecimalSeparator;
-
-
 
             Console.WriteLine("Какой объем сока (в литрах) требуется упаковать? " +
                 $"Введите число, используя '{delimiter}' ,если оно не целое");
