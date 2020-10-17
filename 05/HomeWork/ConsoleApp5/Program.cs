@@ -14,7 +14,6 @@ class Program
         double resultS;
         double resultP;
 
-
         try
         {
             parameter = int.Parse(inputString);
@@ -31,7 +30,6 @@ class Program
         }
 
         string message = string.Empty;
-
 
         switch (parameter)
         {
@@ -51,16 +49,13 @@ class Program
                     throw;
                 }
 
-
                 parameter = int.Parse(a);
-
 
                 resultS = (Math.PI * (parameter * parameter)) / 4;
                 resultP = Math.PI * parameter;
                 Console.WriteLine($"Площадь поверхности: " + Math.Round(resultS, 0));
                 Console.WriteLine($"Длина периметра: " + Math.Round(resultP, 0));
                 break;
-
 
             case 2:
                 message = "Введите длину стороны";
@@ -85,7 +80,6 @@ class Program
                 Console.WriteLine($"Площадь поверхности: " + Math.Round(resultS, 0));
                 Console.WriteLine($"Длина периметра: " + Math.Round(resultP, 0));
                 break;
-
 
             case 3:
                 message = "Введите длину прямоугольника:";
@@ -127,7 +121,6 @@ class Program
                 Console.WriteLine($"Площадь поверхности: " + Math.Round(resultS, 0));
                 Console.WriteLine($"Длина периметра: " + Math.Round(resultP, 0));
                 break;
-
 
         }
 
