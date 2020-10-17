@@ -55,13 +55,11 @@ class Program
                 parameter = int.Parse(a);
 
 
-
                 resultS = (Math.PI * (parameter * parameter)) / 4;
                 resultP = Math.PI * parameter;
                 Console.WriteLine($"Площадь поверхности: " + Math.Round(resultS, 0));
                 Console.WriteLine($"Длина периметра: " + Math.Round(resultP, 0));
                 break;
-
 
 
             case 2:
@@ -131,14 +129,7 @@ class Program
                 break;
 
 
-
-
         }
-
-
-
-
-
 
     }
 }
