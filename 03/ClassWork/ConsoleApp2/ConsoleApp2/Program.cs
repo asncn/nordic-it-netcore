@@ -91,7 +91,9 @@ namespace ConsoleApp2
             Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Yellow;
 
-            Console.SetCursorPosition(left: 100, top: 10);
+            Console.InputEncoding = Encoding.UTF8;
+
+            Console.SetCursorPosition(left: 10, top: 10);
 
             if ((modifiers & ConsoleModifiers.Shift) != 0)
                 Console.WriteLine("Shift pressed");
