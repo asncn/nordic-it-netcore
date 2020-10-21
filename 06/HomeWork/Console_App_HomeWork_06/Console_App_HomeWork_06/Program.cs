@@ -20,7 +20,6 @@ class Program
             Console.WriteLine("Ошибка System.FormatException! Попробуйте ещё раз: ");
             throw;
         }
-
         if (inputNumber < 1)
         {
             throw new Exception("Введено неверное значение! Попробуйте ещё раз:  ");
@@ -34,7 +33,6 @@ class Program
         int Length = 0;
         foreach (char digitSymbol in inputNumber.ToString())
         {
-
             int digit = int.Parse(digitSymbol.ToString());
 
             if (digit % 2 == 0)
