@@ -9,16 +9,11 @@ class Program
     {
         Console.Write(" Введите положительное натуральное число не более 2 миллиардов: ");
         string inputString = Console.ReadLine();
-        int parameter;
-        int parameter2;
-        double resultS;
-        double resultP;
-
-
+        int inputNumber;
 
         try
         {
-            parameter = int.Parse(inputString);
+            inputNumber = int.Parse(inputString);
         }
         catch
         {
@@ -26,26 +21,30 @@ class Program
             throw;
         }
 
-        if (parameter < 1)
+        if (inputNumber < 1)
         {
             throw new Exception("Введено неверное значение! Попробуйте ещё раз:  ");
         }
 
-        if (parameter > 2000000000)
+        if (inputNumber > 2000000000)
         {
             throw new Exception("Ошибка System.OverflowException! Попробуйте ещё раз: ");
         }
 
-
-        foreach (char digitSymbol in parameter.ToString())
+        int Length = 0;
+        foreach (char digitSymbol in inputNumber.ToString())
         {
 
             int digit = int.Parse(digitSymbol.ToString());
-            Console.WriteLine(digit * digit);
-        }
 
+            if (digit % 2 == 0)
+            {
+                Length++;
+            }
+
+        }
+        Console.WriteLine($"В числе {inputNumber} содержится следующее количество четных цифр: {Length}");
 
     }
 
 }
-
