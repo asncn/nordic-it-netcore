@@ -1,30 +1,16 @@
 ﻿using System;
-
 using System.Globalization;
 
-
-
 namespace _4th_Homework
-
 {
-
-    enum containersType
-
-    {
-
-        Small = 1,
-        Medium = 5,
-        Large = 20
-
-    }
-
     class Program
-
     {
 
         static void Main(string[] args)
-
         {
+            int Small = 1;
+            int Medium = 5;
+            int Large = 20;
 
             int firstContainer = 0;
             int secondContainer = 0;
@@ -45,52 +31,37 @@ namespace _4th_Homework
             double Number = double.Parse(InputNumber);
 
             Console.WriteLine("Вам потребуются следующие контейнеры:");
-            for (thirdContainer = 0; (double)containersType.Large <= Number; thirdContainer++)
+            for (thirdContainer = 0; Large <= Number; thirdContainer++)
             {
-
-                Number = Math.Ceiling(Number - (double)containersType.Large);
-
+                Number = Math.Ceiling(Number - Large);
             }
 
             if (thirdContainer != 0)
             {
-
                 Console.WriteLine($"20л: " + thirdContainer + "шт.");
-
             }
 
-            for (secondContainer = 0; (double)containersType.Medium <= Number; secondContainer++)
+            for (secondContainer = 0; Medium <= Number; secondContainer++)
             {
-
-                Number = Math.Ceiling(Number - (double)containersType.Medium);
-
+                Number = Math.Ceiling(Number - Medium);
             }
 
             if (secondContainer != 0)
             {
-
                 Console.WriteLine($"5л: " + secondContainer + "шт.");
-
             }
 
-            for (firstContainer = 0; (double)containersType.Small <= Number; firstContainer++)
+            for (firstContainer = 0; Small <= Number; firstContainer++)
             {
-
-                Number = Math.Ceiling(Number - (double)containersType.Small);
-
+                Number = Math.Ceiling(Number - Small);
             }
 
             if (firstContainer != 0)
             {
-
                 Console.WriteLine($"1л: " + firstContainer + "шт.");
-
             }
-
         }
-
     }
-
 }
 
 
