@@ -17,12 +17,12 @@ namespace Homework_2_of7th_lesson
 					Console.WriteLine("Вы ввели пустую строку! Попробуйте ещё раз: ");
 					continue;
 				}
-				StringBuilder lineNew = new StringBuilder(textInput.Length);
+				StringBuilder lineNew = new StringBuilder(textInput.Length+50);
 				int i = 0;
 
 				for (; i < lineNew.Capacity; i++)
 					lineNew.Insert(0, textInput[i]);
-			
+				
 				Console.WriteLine(lineNew.ToString().ToLower());
 
 			} while (string.IsNullOrWhiteSpace(textInput));
