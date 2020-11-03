@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "L09_C01_simple_code_for_ildasm": {
+      "commandName": "Project",
+      "commandLineArgs": "-10"
+    }
+  }
+}
