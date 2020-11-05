@@ -10,6 +10,7 @@ namespace Homework_7th
 		{
 			string textInput;
 			string[] words;
+			char[] charArray;
 			Console.WriteLine("Введите строку из нескольких слов: ");
 			do
 			{
@@ -17,16 +18,19 @@ namespace Homework_7th
 				words = textInput.Split(' ');
 				if (words.Length >= 2)
 				{
-					int letterCount = 0;
+					int lettersCount = 0;
 					foreach (string a in words)
-					{						
-						if (a.Substring(0, 1) == "А" || a.Substring(0, 1) == "а" || a.Substring(0, 1) == "A" ||
-							a.Substring(0, 1) == "a")
+					{
+						charArray = a.ToCharArray();
+						if (charArray[0] == 'a' || charArray[0] == 'A' || charArray[0] == 'а' || charArray[0] == 'А')
+
+						//if (a.Substring(0, 1) == "А" || a.Substring(0, 1) == "а" || a.Substring(0, 1) == "A" ||
+							//a.Substring(0, 1) == "a")
 						{
-							letterCount++;
+							lettersCount++;
 						}
 					}
-					Console.WriteLine($"Количество слов, начинающихся с буквы 'А': {letterCount}");
+					Console.WriteLine($"Количество слов, начинающихся с буквы 'А': {lettersCount}");
 				}
 				else
 				{
