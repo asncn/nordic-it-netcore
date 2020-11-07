@@ -1,49 +1,5 @@
 ﻿using System;
 
-public class Pet
-{
-	public enum AnimalKind { Mouse, Cat, Dog }
-
-	private string _birthPlace;
-	private char _sex;
-
-	public AnimalKind Kind;
-	public string Name;
-
-	public char Sex
-	{
-		get
-		{
-			return _sex;
-		}
-		set
-		{
-			if (value == 'f' || value == 'F' || value == 'm' || value == 'M')
-			{
-				_sex = char.ToUpper(value);
-			}
-			else
-			{
-				throw new Exception("Invalid value");
-			}
-		}
-	}
-	public byte Age { get; set; }
-
-	public string Description
-	{
-		get
-		{
-			return $"{Name} is a {Kind} ({Sex}) of {Age} years old" +
-				$" (birth place: {_birthPlace}.";
-		}
-	}
-
-	public void SetBirthPlace(string birthPlace)
-	{
-		_birthPlace = birthPlace;
-	}
-}
 
 class Program
 {
@@ -53,9 +9,12 @@ class Program
 		pet1.Kind = Pet.AnimalKind.Cat;
 		pet1.Name = "Tom";
 		pet1.Sex = 'M';
-		pet1.Age = 8;
+		pet1.DateOfBirth = DateTimeOffset.Parse("2012-11-07 20:20:15.5488");
 		pet1.SetBirthPlace("Moscow");
-		Console.WriteLine(pet1.Description);
+		Console.WriteLine(pet1.GetDescription());
+
+		pet1.UpdateProperties("Bob");
+		Console.WriteLine(pet1.GetDescription());
 
 
 		Pet pet2 = new Pet
@@ -63,10 +22,22 @@ class Program
 			Kind = Pet.AnimalKind.Mouse,
 			Name = "Minnie",
 			Sex = 'F',
-			Age = 1
+			DateOfBirth = DateTimeOffset.Parse("2012-11-07 20:20:15.5488")
 		};
 		pet2.SetBirthPlace("St.Petersburg");
 
-		Console.WriteLine(pet2.Description);
+		Console.WriteLine(pet2.GetDescription(isShort: true));
+		pet2.UpdateProperties("Jerry", Pet.AnimalKind.Dog, 'M', DateTimeOffset.Parse("2017-09-05"));
+		Console.WriteLine(pet2.GetDescription(isShort: true));
+
+		
+		Pet pet3 = new Pet("hhh", Pet.AnimalKind.Mouse, 'F', DateTimeOffset.Parse("2015-08-11"));
+		Console.WriteLine(pet3.GetDescription(isShort: false));
+
+
+
+
+		Console.ReadKey();
 	}
+
 }
