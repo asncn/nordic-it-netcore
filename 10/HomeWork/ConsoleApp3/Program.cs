@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Dynamic;
+using System.Linq;
+
 class Program
 {
     class Person
@@ -42,30 +45,26 @@ class Program
     }
     static void Main(string[] args)
     {
-        Person[] persons = new Person[3];
-        persons[0] = new Person();
-        persons[1] = new Person();
-        persons[2] = new Person();
+        const int quantity = 3;
+        string input = string.Empty;
 
-        Console.Write("Enter name 0: ");
-        persons[0].Name = Console.ReadLine();
+        Person[] persons = new Person[quantity];
+        for (int i = 0; i < quantity; i++)
+        {
+            persons[i] = new Person();
 
-        Console.Write("Enter age 0: ");
-        persons[0].Age = byte.Parse(Console.ReadLine());
+            Console.WriteLine($"Enter name {i}: ");
+            input = Console.ReadLine();
+            persons[i].Name = input;
 
-        Console.Write("Enter name 1: ");
-        persons[1].Name = Console.ReadLine();
-        Console.Write("Enter age 1: ");
-        persons[1].Age = byte.Parse(Console.ReadLine());
-
-        Console.Write("Enter name 2: ");
-        persons[2].Name = Console.ReadLine();
-        Console.Write("Enter age 2: ");
-        persons[2].Age = byte.Parse(Console.ReadLine());
-
-        for (int i = 0; i < 3; i++)
-        Console.WriteLine(persons[i].Description);
-        
+            Console.WriteLine($"Enter age {i}: ");
+            input = Console.ReadLine();
+            persons[i].Age = byte.Parse(input);
+        }
+        for (int i = 0; i < persons.Count(); i++)
+        {
+            Console.WriteLine(persons[i].Description);
+        }
         Console.WriteLine("Press any key to continue . . .");
         Console.ReadKey();
     }
