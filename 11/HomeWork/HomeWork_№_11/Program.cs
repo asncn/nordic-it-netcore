@@ -8,7 +8,7 @@ namespace HomeWork___11
 		{
 			DateTimeOffset alarmDate = default;
 			string alarmMessage = null;
-			ReminderItem[] reminders = new ReminderItem[2];            
+			ReminderItem[] reminders = new ReminderItem[2];
             reminders[0] = new ReminderItem(alarmDate, alarmMessage);
 			reminders[1] = new ReminderItem(alarmDate, alarmMessage);
 
