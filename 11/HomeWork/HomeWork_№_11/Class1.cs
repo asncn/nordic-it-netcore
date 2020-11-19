@@ -17,7 +17,7 @@ namespace HomeWork___11
 		{
 			get
 			{
-				return TimeToAlarm >= TimeSpan.Zero;
+				return TimeToAlarm > TimeSpan.Zero;
 			}
 		}
 		public ReminderItem(DateTimeOffset alarmDate, string alarmMessage)
