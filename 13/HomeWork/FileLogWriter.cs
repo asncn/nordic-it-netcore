@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
+﻿using System.IO;
 
 namespace HomeWork_13
 {
     class FileLogWriter : BaseLogWriter, ILogWriter
     {
         private string FileName { get; }
-
         public FileLogWriter(string fileName)
         {
             FileName = fileName;
         }
-
         public override void WriteMessage(string message, MessageType type)
         {
             var fileStream = File.Open(FileName, FileMode.OpenOrCreate);
