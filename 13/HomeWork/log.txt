@@ -1,0 +1,3 @@
+YYYY-11-DDT19:11:SS+0000	Info:	Information
+YYYY-11-DDT19:11:SS+0000	Warning:	Warning
+YYYY-11-DDT19:11:SS+0000	Error:	Error

@@ -19,15 +19,15 @@ class Program
 
 class Person
 {
-	private int _age;
+	//private int _age;
 	public int Age
 	{
-		get { return _age; }
+		get { return Age; }
 		set
 		{
 			if (value > 0 && value < 140)
 			{
-				_age = value;
+				Age = value;
 			}
 		}
 	}
