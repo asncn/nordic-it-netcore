@@ -6,14 +6,17 @@ namespace L15_C10_delegate_SW
 	{
 		static void Main(string[] args)
 		{
+			Func <double, double> perimeter = radius =>  (2 * Math.PI* radius);
+			//Func<double, double> square = radius => (Math.PI * Math.Pow(radius, 2));
+
 			const double circleRadius = 1.5;
 			var circle = new Circle(circleRadius);
 
 			var circlePerimeter =
-				circle.Calculate(CircleOperation.CalculatePerimeter);
+				circle.Calculate(perimeter);
 
 			var circleSquare =
-				circle.Calculate(CircleOperation.CalculateSquare);
+				circle.Calculate(radius => (Math.PI * Math.Pow(radius, 2)));
 
 			Console.WriteLine(
 				$"For the circle with radius {circleRadius}\n" +
