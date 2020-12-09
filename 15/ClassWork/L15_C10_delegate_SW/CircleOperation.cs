@@ -15,5 +15,16 @@ namespace L15_C10_delegate_SW
 		{
 			return Math.PI * Math.Pow(radius, 2);
 		}
+
+
+		//public static Func <double, double> Perimeter  =>  (2 * Math.PI* radius);
+
+		//public static Func<double, double> Square => (Math.PI * Math.Pow(radius, 2));
+
+
+
+
+
+		
 	}
 }
