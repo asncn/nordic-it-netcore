@@ -4,6 +4,7 @@ class Program
 {
 	static void Main()
 	{
+		while(true)
 		try
 		{
 			Console.WriteLine("Enter integer value A: ");
@@ -18,7 +19,7 @@ class Program
 		{
 			Console.WriteLine("You entered incorrect data!");
 		}
-		catch (DivideByZeroException e)	// Cannot divide by zero!
+		catch (DivideByZeroException)	// Cannot divide by zero!
 		{
 			Console.WriteLine("Cannot divide by zero!");
 		}

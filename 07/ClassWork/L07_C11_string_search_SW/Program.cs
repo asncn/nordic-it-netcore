@@ -26,18 +26,18 @@ namespace L07_C11_string_search_SW
 			Console.WriteLine("Enter the string to search for:");
 			var substring = Console.ReadLine();
 
-			int foundPosition = -1;
+			int gavno = -1;
 			string answer = string.Empty;
 			do
 			{
-				foundPosition = source.IndexOf(substring, foundPosition + 1);
+				gavno = source.IndexOf(substring, gavno + 1);
 
-				if (foundPosition >= 0)
+				if (gavno >= 0)
 				{
-					answer += foundPosition + " ";
+					answer += gavno + " ";
 				}
 			}
-			while (foundPosition >= 0);
+			while (gavno >= 0);
 
 			Console.WriteLine(answer == string.Empty
 				? "-"

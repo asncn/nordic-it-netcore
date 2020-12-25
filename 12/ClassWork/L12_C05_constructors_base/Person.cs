@@ -37,6 +37,11 @@ public class Person
 
 	public void WriteShortDecription()
 	{
-		Console.WriteLine(ShortDescription);
+		WCW(ShortDescription);
+	}
+
+	public void WCW(string s)
+	{
+		Console.WriteLine();
 	}
 }

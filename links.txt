@@ -1,3 +1,52 @@
 NLog
-
 https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-2
+
+----------------------------------
+
+ms] Основная страница документации Microsoft по ASP.NET Core
+https://docs.microsoft.com/en-us/aspnet
+● [ms] Учебник. Начало работы с ASP.NET Core
+https://docs.microsoft.com/ru-ru/aspnet/core/getting-started/?view=aspnetcore-2.2
+● [ms] Общие сведения ASP.NET Core MVC
+https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-2.2
+● [habr] Корректный ASP.NET Core
+https://habr.com/ru/post/437002
+● [habr] JSON API – работаем по спецификации ★★★★★ https://habr.com/ru/company/oleg-bunin/blog/433322
+
+---------------------------------------------
+Список кодов состояния HTTP
+
+https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP
+
+Wikipedia (https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP)
+----------------------------------------
+snippets
+https://docs.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets?view=vs-2017
+-------------------------------
+prop + [Tab] + [Tab] — для создания свойства { get; set; }
+● propg + [Tab] + [Tab] — для создания свойства { get; private set; }
+● сtor + [Tab] + [Tab] — для создания конструктора объекта
+Все возможные сниппеты можно найти здесь:
+● https://docs.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-sni
+
+----------------------------------------
+Instantly parse JSON in any language | quicktype
+
+https://app.quicktype.io/#l=cs&r=json2csharp
+
+app.quicktype.io (https://app.quicktype.io/)
+
+------------------------------------
+Convert JSON to C# Classes Online - Json2CSharp Toolkit
+http://json2csharp.com/
+
+------------------------------
+
+C# to JSON Converter: Convert C# classes to JSON
+https://csharp2json.io
+
+https://beautifier.io/
+
+==============================================
+https://www.getpostman.com
+www.telerik.com/download/fiddler

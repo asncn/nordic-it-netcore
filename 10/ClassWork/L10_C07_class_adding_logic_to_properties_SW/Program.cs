@@ -43,7 +43,7 @@ class Program
 		Pet pet1 = new Pet();
 		pet1.Kind = Pet.AnimalKind.Cat;
 		pet1.Name = "Tom";
-		pet1.Sex = 'M';
+		pet1.Sex = 'z';
 		pet1.Age = 8;
 		Console.WriteLine(pet1.Description);
 

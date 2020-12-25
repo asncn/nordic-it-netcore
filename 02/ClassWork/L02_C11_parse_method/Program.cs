@@ -19,7 +19,7 @@ class Program
 		Console.WriteLine(ulong.Parse("7"));
 
 		Console.WriteLine(float.Parse("7"));
-		Console.WriteLine(double.Parse("7"));
-		Console.WriteLine(decimal.Parse("7"));
+		Console.WriteLine(string.Parse("7"));
+		Console.WriteLine(char.Parse("7"));
 	}
 }

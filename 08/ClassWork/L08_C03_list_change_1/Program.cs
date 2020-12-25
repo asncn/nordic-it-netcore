@@ -10,7 +10,7 @@ class Program
 		Console.WriteLine(string.Join(", ", intList));
 		// 10, 20, 30, 40, 50, 60, 70, 80
 
-		intList.RemoveRange(4, 2); // remove 2 elements from index 4 
+		intList.RemoveRange(1, 5); // remove 2 elements from index 4 
 		Console.WriteLine(string.Join(", ", intList));
 		// 10, 20, 30, 40, 70, 80
 	}

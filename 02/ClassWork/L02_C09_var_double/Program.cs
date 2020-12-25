@@ -7,20 +7,25 @@ class Program
 		// Восьмибайтовое дробное число(точность ~15 - 17 знаков после запятой)
 		// System.Double или ключевое слово double(±5.0×10 ^−324 – ±1.7×10 ^ 308)
 
-		double a = 3D;
-		Console.WriteLine(a);
+		
 
 		// Output: 3
 
 		// Mixing types in expressions
-		int x = 3;
-		float y = 4.5f;
-		short z = 5;
-		double w = 1.7E+3;
 		
+		//float y = 24.002000000F;
+		
+		
+		//Type type = (x + y + z).GetType();
+		///Console.WriteLine(type.ToString());
 		// Result of the 2nd argument is a double:
-		Console.WriteLine("The sum is {0}", x + y + z + w);
+		Console.WriteLine((-1 - 999999999999999999).GetType().ToString());
 
 		// Output: The sum is 1712.5
 	}
+
+    //private static object GetType(int v, float S, short N, double Y)
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

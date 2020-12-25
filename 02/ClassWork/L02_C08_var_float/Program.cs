@@ -14,7 +14,7 @@ class Program
 		float y = 4.5f;
 		short z = 5;
 		var result = x * y / z;
-		Console.WriteLine("The result is {0}", result);
+		Console.WriteLine("The result is {0} {b} {0}", result, z);
 		Type type = result.GetType();
 		Console.WriteLine("result is of type {0}", type.ToString());
 	}

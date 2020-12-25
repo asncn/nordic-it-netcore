@@ -9,7 +9,7 @@ class Program
 
 		for (int i = 0; i < 5; i++)
 		{
-			var num = int.Parse(Console.ReadLine());
+			int num = int.Parse(Console.ReadLine());
 			numbers[i] = num; // access to the element of array by its number
 		}
 

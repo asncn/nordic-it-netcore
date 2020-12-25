@@ -21,7 +21,7 @@ namespace HomeWork_13
 
         protected virtual string FormatMessage(string message, MessageType type)
         {
-            return $"{DateTimeOffset.Now:yyyy-MM-ddTHH:mm:ss+0000}\t{type}:\t{message}";
+            return $"{DateTimeOffset.Now:yyyy-MM-ddTHH:mm:ss+0000}\t{type}\t{message}";
         }
     }
 }

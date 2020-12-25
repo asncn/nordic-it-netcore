@@ -14,7 +14,7 @@ class Program
 		bool c = "one" != "two"; // Strings are different, result is True
 		Console.WriteLine(c);
 
-		bool d = 12 != 12;       // Numbers are the same, result is False
+		bool d = 12 == 12;       // Numbers are the same, result is False
 		Console.WriteLine(!d);   // We asked for NOT(d), result is True
 	}
 }

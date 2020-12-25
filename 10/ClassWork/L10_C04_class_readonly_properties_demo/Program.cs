@@ -7,20 +7,22 @@ class Program
 		Person p1 = new Person();
 		p1.Name = "Andrei";
 		p1.Age = 36;
+
+        Console.WriteLine(p1.Age);
 	}
 }
 
 class Person
 {
-	private int _age;
+	
 	public int Age
 	{
-		get { return _age; }
+		get { return Age; }
 		set
 		{
 			if (value > 0 && value < 140)
 			{
-				_age = value;
+				Age = value;
 			}
 		}
 	}
